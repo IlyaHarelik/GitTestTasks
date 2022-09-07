@@ -2,23 +2,24 @@
 
 namespace src;
 
+use InvalidArgumentException;
+
 class Task7
 {
-    public function main(array $arr, int $position)
+    public function main(array $arr, int $position): array
     {
+        if(count($arr) < 1 || $position >= count($arr) || $position < 0 ){
+            throw new InvalidArgumentException;
+        }
         unset($arr[$position]);
 
-        $keys = [0];
-        for ($i = 1; $i < count($arr); $i++) {
+        $keys = [];
+        for ($i = 0; $i < count($arr); $i++) {
             $keys[] = $i;
         }
 
-        $arr = array_combine($keys, $arr);
-
-        var_dump($arr);
+        return array_combine($keys, $arr);
     }
 }
 
-
 $result = new Task7;
-$result->main([1, 2, 3, 4, 5, 4, 21, 4321, 32, 3, 23, 2123], 5);
