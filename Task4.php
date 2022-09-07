@@ -12,11 +12,7 @@ class Task4
         $editedText = ucwords($editedText);
         $chars = [' '];
         $editedText = str_replace($chars, '', $editedText);
-        echo $editedText;
 
         return $editedText;
     }
 }
-
-$example = new Task4();
-$example->main('The quick-brown_fox jumps over the_lazy-dog');
