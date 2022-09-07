@@ -10,7 +10,6 @@ class Task3
 
         do {
             $digitArray = array_sum($digitArray);
-
             $digitArray = str_split($digitArray);
             $count = count($digitArray);
         } while ($count > 1);
