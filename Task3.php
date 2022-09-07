@@ -9,18 +9,12 @@ class Task3
         $digitArray = str_split($digit);
 
         do {
-            echo ' = ' . implode(' + ', $digitArray);
-            echo ' = ';
             $digitArray = array_sum($digitArray);
-            echo $digitArray;
+
             $digitArray = str_split($digitArray);
             $count = count($digitArray);
         } while ($count > 1);
 
-
-        return implode('', $digitArray);
+        return intval($digitArray[0]);
     }
 }
-
-$result = new Task3();
-$result->main(4998887777989443242);
