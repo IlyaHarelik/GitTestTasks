@@ -12,15 +12,15 @@ class Task1
         $result3 = 'More than 10';
         $result4 = "Equal or less than 10";
 
-        $inputNumber > 30 ? $result = $result1 :
-            ($inputNumber > 20 ? $result = $result2 :
-                ($inputNumber > 10 ? $result = $result3 :
-                    $result = $result4)
-            );
+        $result = $inputNumber > 30 ?
+            $result1 :
+            ($inputNumber > 20 ?
+                $result2 :
+                ($inputNumber > 10 ?
+                    $result3 :
+                     $result4));
 
         return $result;
     }
 }
 
-$res = new Task1;
-echo $res->main(22);
