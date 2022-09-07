@@ -61,7 +61,7 @@ class MyCalculator extends Task12
     }
 }
 
-$myCalc = new MyCalculator(19, 6);
+$myCalc = new MyCalculator(423, 4234);
 
 echo $myCalc->add()->divideBy(2)->add()->multiply();
 

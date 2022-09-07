@@ -11,7 +11,7 @@ class Task8
         $this->a = $a;
     }
 
-    public function output()
+    public function output(): string
     {
         function arr($value, $key)
         {

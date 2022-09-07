@@ -36,4 +36,4 @@ class Task5
 }
 
 $res = new Task5;
-echo $res->main(100);
+echo $res->main(3000);

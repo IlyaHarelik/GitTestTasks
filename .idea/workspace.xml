@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27f05a9d-dfad-4405-a418-48d3d3250cd5" name="Changes" comment="" />
+    <list default="true" id="27f05a9d-dfad-4405-a418-48d3d3250cd5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task12.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task5.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task8.php" beforeDir="false" afterPath="$PROJECT_DIR$/Task8.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1" />
   <component name="ProjectId" id="2ELHg14LYZgP1qHObHxB8vzawnf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/MyFP/OpenServer/domains/GitTestTasks",
+    "last_opened_file_path": "C:/MyFP/OpenServer/domains/InnowiseTasks",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
     "vue.rearranger.settings.migration": "true"
@@ -41,8 +47,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662368051961</updated>
-      <workItem from="1662368053212" duration="1103000" />
-      <workItem from="1662369429626" duration="2687000" />
+      <workItem from="1662368053212" duration="1669000" />
+      <workItem from="1662372486655" duration="3343000" />
+      <workItem from="1662383737108" duration="2811000" />
+      <workItem from="1662445166523" duration="190000" />
+      <workItem from="1662445515987" duration="4816000" />
+      <workItem from="1662533113906" duration="24000" />
     </task>
     <servers />
   </component>
