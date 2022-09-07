@@ -2,10 +2,15 @@
 
 namespace src;
 
+use InvalidArgumentException;
+
 class Task5
 {
-    function main($n): string
+    function main(int $n): string
     {
+        if($n < 0 )
+            throw new InvalidArgumentException;
+
         $fib1 = '0';
         $fib2 = '1';
         $reverseFib3 = '';
@@ -36,4 +41,4 @@ class Task5
 }
 
 $res = new Task5;
-echo $res->main(100);
+echo $res->main(9);
