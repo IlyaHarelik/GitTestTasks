@@ -4,11 +4,17 @@ namespace src;
 
 use DateInterval;
 use DatePeriod;
+use InvalidArgumentException;
 
 class Task6
 {
     public function main(int $year, int $lastYear, int $month, int $lastMonth, string $dayName = 'Monday'): int
     {
+        if ($year < 0 || $lastYear < 0 || $month < 0 || $lastMonth < 0 ||
+            $year > $lastYear || $month > 12 || $lastMonth > 12) {
+            throw new InvalidArgumentException;
+        }
+
         $date1 = $month . '.' . $year;
         $date2 = $lastMonth . '.' . $lastYear;
 
@@ -28,6 +34,3 @@ class Task6
         return $count;
     }
 }
-
-$result = new Task6;
-echo $result->main(1999, 2010, 02, 02);
