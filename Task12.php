@@ -2,6 +2,8 @@
 
 namespace src;
 
+use InvalidArgumentException;
+
 class Task12
 {
 }
@@ -50,6 +52,9 @@ class MyCalculator extends Task12
 
     public function divideBy(int $num): object
     {
+        if($num === 0) {
+            throw new InvalidArgumentException;
+        }
         $this->result = $this->result / $num;
 
         return $this;
@@ -60,9 +65,3 @@ class MyCalculator extends Task12
         return "{$this->result}";
     }
 }
-
-$myCalc = new MyCalculator(19, 6);
-
-echo $myCalc->add()->divideBy(2)->add()->multiply();
-
-
