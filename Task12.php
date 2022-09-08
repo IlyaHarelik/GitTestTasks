@@ -24,8 +24,9 @@ class MyCalculator extends Task12
     {
         if (isset($this->result)) {
             $this->result = $this->result + $this->value1 + $this->value2;
-        } else
+        } else {
             $this->result = $this->value1 + $this->value2;
+        }
 
         return $this;
     }
@@ -34,8 +35,9 @@ class MyCalculator extends Task12
     {
         if (isset($this->result)) {
             $this->result = $this->result - $this->value1 - $this->value2;
-        } else
+        } else {
             $this->result = $this->value1 - $this->value2;
+        }
 
         return $this;
     }
@@ -44,15 +46,16 @@ class MyCalculator extends Task12
     {
         if (isset($this->result)) {
             $this->result = $this->result * $this->value1 * $this->value2;
-        } else
+        } else {
             $this->result = $this->value1 * $this->value2;
+        }
 
         return $this;
     }
 
     public function divideBy(int $num): object
     {
-        if($num === 0) {
+        if ($num === 0) {
             throw new InvalidArgumentException;
         }
         $this->result = $this->result / $num;
