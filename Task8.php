@@ -18,15 +18,3 @@ class Task8
         });
     }
 }
-
-$example = new Task8();
-
-$text ='{
-    "Title": "The Cuckoos Calling",
-    "Author": "Robert Galbraith",
-    "Detail": {
-    "Publisher": "Little Brown"
-    }
-    }';
-
-$example->main($text);
