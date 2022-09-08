@@ -18,8 +18,8 @@ class Task6
         $date1 = $month . '.' . $year;
         $date2 = $lastMonth . '.' . $lastYear;
 
-        $date1 = date_create_from_format("m.Y", $date1);
-        $date2 = date_create_from_format("m.Y", $date2);
+        $date1 = date_create_from_format('m.Y', $date1);
+        $date2 = date_create_from_format('m.Y', $date2);
 
         $count = 0;
         $interval = new DateInterval('P1D');
