@@ -8,7 +8,7 @@ class Task7
 {
     public function main(array $arr, int $position): array
     {
-        if(count($arr) < 1 || $position >= count($arr) || $position < 0 ){
+        if (count($arr) < 1 || $position >= count($arr) || $position < 0) {
             throw new InvalidArgumentException;
         }
         unset($arr[$position]);
