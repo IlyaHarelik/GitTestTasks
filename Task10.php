@@ -8,7 +8,7 @@ class Task10
 {
     public function main(int $input): string
     {
-        if($input <= 1) {
+        if ($input <= 1) {
             throw new InvalidArgumentException;
         }
         $result = [];
