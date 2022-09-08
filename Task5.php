@@ -6,10 +6,11 @@ use InvalidArgumentException;
 
 class Task5
 {
-    function main(int $n): string
+    public function main(int $n): string
     {
-        if($n <= 0 )
+        if ($n <= 0) {
             throw new InvalidArgumentException;
+        }
 
         $fib1 = '0';
         $fib2 = '1';
@@ -33,7 +34,6 @@ class Task5
             $fib1 = strrev($reverseFib2);
             $fib2 = $fib3;
             $reverseFib3 = '';
-
         } while (strlen($fib2) < $n);
 
         return $fib2;
