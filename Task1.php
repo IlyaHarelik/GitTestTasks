@@ -9,7 +9,7 @@ class Task1
         $result1 = 'More than 30';
         $result2 = 'More than 20';
         $result3 = 'More than 10';
-        $result4 = "Equal or less than 10";
+        $result4 = 'Equal or less than 10';
 
         $result = $inputNumber > 30 ?
             $result1 :
