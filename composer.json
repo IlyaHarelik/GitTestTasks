@@ -1,0 +1,17 @@
+{
+    "name": "admin/git-test-tasks",
+    "autoload": {
+        "psr-4": {
+            "Admin\\GitTestTasks\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "IlyaHarelik",
+            "email": "ilyha.gor@mail.ru"
+        }
+    ],
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.11"
+    }
+}
