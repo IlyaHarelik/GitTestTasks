@@ -2,10 +2,22 @@
 
 namespace src;
 
+use InvalidArgumentException;
+
 class Task9
 {
     public function main(array $arr, int $number): string
     {
+        if(count($arr) < 3) {
+            throw new InvalidArgumentException;
+        }
+
+        foreach ($arr as $elem){
+            if(!(gettype($elem) === "integer")){
+                throw new InvalidArgumentException;
+            }
+        }
+
         $count = count($arr) - 2;
         $result = [];
 
@@ -19,6 +31,3 @@ class Task9
         return print_r($result);
     }
 }
-
-$result = new Task9;
-$result->main([1, 9, 6, 5, 5, 7, 21, 3, 2, 5], 16);
