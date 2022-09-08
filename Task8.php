@@ -2,36 +2,31 @@
 
 namespace src;
 
+use InvalidArgumentException;
+
 class Task8
 {
-    public string $a;
-
-    public function __construct(string $a)
+    public function main(string $a): string
     {
-        $this->a = $a;
-    }
+        $jsonString = json_decode($a, true);
 
-    public function output()
-    {
-        function arr($value, $key)
-        {
-            echo "$key : $value" . "</br>";
+        if (!(json_last_error() === JSON_ERROR_NONE)) {
+            throw new InvalidArgumentException;
         }
-
-        $jsonString = json_decode($this->a, true);
-
         return array_walk_recursive($jsonString, function ($value, $key) {
             echo "$key : $value" . "</br>";
         });
     }
 }
 
-$example = new Task8('{
+$example = new Task8();
+
+$text ='{
     "Title": "The Cuckoos Calling",
     "Author": "Robert Galbraith",
     "Detail": {
     "Publisher": "Little Brown"
     }
-    }');
+    }';
 
-$example->output();
+$example->main($text);
