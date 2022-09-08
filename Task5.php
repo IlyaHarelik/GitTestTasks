@@ -8,7 +8,7 @@ class Task5
 {
     function main(int $n): string
     {
-        if($n < 0 )
+        if($n <= 0 )
             throw new InvalidArgumentException;
 
         $fib1 = '0';
@@ -39,6 +39,3 @@ class Task5
         return $fib2;
     }
 }
-
-$res = new Task5;
-echo $res->main(9);
