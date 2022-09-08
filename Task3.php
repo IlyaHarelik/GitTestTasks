@@ -12,6 +12,7 @@ class Task3
             $digitArray = array_sum($digitArray);
             $digitArray = str_split($digitArray);
             $count = count($digitArray);
+
         } while ($count > 1);
 
         return intval($digitArray[0]);
