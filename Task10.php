@@ -25,6 +25,3 @@ class Task10
         return print_r($result);
     }
 }
-
-$res = new Task10;
-$res->main(2);
