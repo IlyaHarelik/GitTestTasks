@@ -23,7 +23,3 @@ class Task3
         return intval($digitArray[0]);
     }
 }
-
-$res = new Task3();
-
-echo $res->main(0);
