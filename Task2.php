@@ -17,8 +17,16 @@ class Task2
         $diff = date_diff($currentDate, $dateBirth);
         $daysLeft = $diff->format('%R%a');
         $daysLeft = trim($daysLeft, $characters = '+');
+
         if ($daysLeft < 0) {
-            throw new InvalidArgumentException();
+            $dateBirth = date_format($dateBirth, 'j-m');
+            $dateBirth = date_create_from_format('j-m', $dateBirth);
+            $currentDate = date_format($currentDate,'j-m');
+            $currentDate = date_create_from_format('j-m', $currentDate);
+            $diff = date_diff($currentDate, $dateBirth);
+            $daysLeft = $diff->format('%R%a');
+            $days = date('L')?366:365;
+            $daysLeft += $days;
         }
 
         return $daysLeft;
