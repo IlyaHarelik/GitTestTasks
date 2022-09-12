@@ -13,9 +13,11 @@ class Task8
         if (!(json_last_error() === JSON_ERROR_NONE)) {
             throw new InvalidArgumentException;
         }
-
-        return array_walk_recursive($jsonString, function ($value, $key) {
-            echo "$key : $value" . '</br>';
+        $result ='';
+        array_walk_recursive($jsonString, function ($value, $key) use (&$result) {
+            $result .= "$key: $value" . '</br>';
         });
+
+        return $result;
     }
 }
