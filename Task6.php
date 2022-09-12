@@ -27,10 +27,11 @@ class Task6
 
         foreach ($period as $day) {
             if ($day->format('D') === ucfirst(substr($dayName, 0, 3))) {
-                $count++;
+                if ($day->format('j') === '1') {
+                    $count++;
+                }
             }
         }
-
         return $count;
     }
 }
