@@ -32,6 +32,7 @@ class Task6
                 }
             }
         }
+
         return $count;
     }
 }
