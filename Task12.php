@@ -6,10 +6,6 @@ use InvalidArgumentException;
 
 class Task12
 {
-}
-
-class MyCalculator extends Task12
-{
     public int $value1;
     public int $value2;
     public float $result;
