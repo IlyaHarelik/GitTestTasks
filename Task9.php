@@ -6,7 +6,7 @@ use InvalidArgumentException;
 
 class Task9
 {
-    public function main(array $arr, int $number): string
+    public function main(array $arr, int $number): array
     {
         if (count($arr) < 3) {
             throw new InvalidArgumentException;
@@ -28,6 +28,6 @@ class Task9
             }
         }
 
-        return print_r($result);
+        return $result;
     }
 }
