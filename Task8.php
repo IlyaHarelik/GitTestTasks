@@ -6,13 +6,14 @@ use InvalidArgumentException;
 
 class Task8
 {
-    public function main(string $a): string
+    public function main(string $json): string
     {
-        $jsonString = json_decode($a, true);
+        $jsonString = json_decode($json, true);
 
-        if (!(json_last_error() === JSON_ERROR_NONE)) {
+        if ((is_array($jsonString)) === false) {
             throw new InvalidArgumentException;
         }
+
         $result ='';
         array_walk_recursive($jsonString, function ($value, $key) use (&$result) {
             $result .= "$key: $value" . '</br>';
