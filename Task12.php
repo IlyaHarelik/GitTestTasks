@@ -27,6 +27,13 @@ class Task12
         return $this;
     }
 
+    public function addBy($num): object
+    {
+        $this->result = $this->result + $num;
+
+        return $this;
+    }
+
     public function subtract(): object
     {
         if (isset($this->result)) {
@@ -38,12 +45,40 @@ class Task12
         return $this;
     }
 
+    public function subtractBy($num): object
+    {
+        $this->result = $this->result - $num;
+
+        return $this;
+    }
+
     public function multiply(): object
     {
         if (isset($this->result)) {
             $this->result = $this->result * $this->value1 * $this->value2;
         } else {
             $this->result = $this->value1 * $this->value2;
+        }
+
+        return $this;
+    }
+
+    public function multiplyBy($num): object
+    {
+        $this->result = $this->result * $num;
+
+        return $this;
+    }
+
+    public function divide(): object
+    {
+        if ($this->value1 === 0 || $this->value2 === 0) {
+            throw new InvalidArgumentException;
+        }
+        if (isset($this->result)) {
+            $this->result = $this->result / $this->value1 / $this->value2;
+        } else {
+            $this->result = $this->value1 / $this->value2;
         }
 
         return $this;
