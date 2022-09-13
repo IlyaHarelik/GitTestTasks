@@ -21,11 +21,11 @@ class Task2
         if ($daysLeft < 0) {
             $dateBirth = date_format($dateBirth, 'j-m');
             $dateBirth = date_create_from_format('j-m', $dateBirth);
-            $currentDate = date_format($currentDate,'j-m');
+            $currentDate = date_format($currentDate, 'j-m');
             $currentDate = date_create_from_format('j-m', $currentDate);
             $diff = date_diff($currentDate, $dateBirth);
             $daysLeft = $diff->format('%R%a');
-            $days = date('L')?366:365;
+            $days = date('L') ? 366 : 365;
             $daysLeft += $days;
         }
 
