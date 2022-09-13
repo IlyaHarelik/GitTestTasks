@@ -11,7 +11,7 @@ class Task10
         if ($input <= 1) {
             throw new InvalidArgumentException;
         }
-        $result = [];
+        $result[] = $input;
 
         while ($input > 1) {
             if ($input % 2 === 0) {
